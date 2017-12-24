@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title>Porgressive students collective, Pakistan</title>
+<style>
+body {baclground:#f2f2f2;color:#555; font-size: 1.6rem;line-height: 1.6!important;
+margin:0;padding:0px;font-weight:400}
+
+.navbar.navbar-custom {
+    background: #fff;
+    webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    color: #f52314;
+    margin: 0;
+}
+.navbar-brand{padding:10px 15px!important;}
+.navbar-brand h1{margin:0;padding:0;text-transform:uppercase;}
+
+
+.navbar .navbar-nav > li > a{font-size:16px;font-weight:600;text-transform:uppercase;}
+h1, h2, h3, h4, h5, h6{
+font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+font-weight: 700!important;
+color:#333;
+}
+
+
+
+/*=========================Carousel=======================*/
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 320px;
+}
+
+/*========Footer==========*/
+
+footer.site-footer {
+    background: #fff;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size:15px;
+}
+
+  footer.site-footer a{color:#666;font-weight:500;}
+/* ---Events --- */
+.events {
+    padding: 30px 0;
+    background: #fff;
+}
+
+.events h1 {
+    text-align: center;
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+
+/*-- services --*/
+.services {
+    background: #f52314;
+        padding: 30px 0;
+
+}
+
+
+.services-heading h1 {
+    text-align: center;
+    color:#fff;
+}
+
+.servc-grids {
+	margin-top: 5em;
+}
+/*-- Effect 1--*/
+.servc-grid-left span{
+    font-size: 2em;
+    color: #ffc107;
+    display: inline-block;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1;
+    padding: 1em;
+}
+.servc-grid-left span:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.effect-1 {
+    background: #ffffff;
+    -webkit-transition: background 0.5s, color 0.2s;
+    -moz-transition: background 0.5s, color 0.2s;
+    transition: background 0.5s, color 0.2s;
+}
+.effect-1:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 2px #ffc107;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.2s;
+    -webkit-transform: scale(0.8);
+    -moz-transition: -moz-transform 0.5s, opacity 0.2s;
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transition: transform 0.5s, opacity 0.2s;
+    transform: scale(0.8);
+    opacity: 0;
+}
+.servc-grid:hover span{
+    background: #ffc107;
+    color: #fff !important;
+}
+.servc-grid:hover span:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+/*--//Effect 1--*/
+.servc-grid-right h4 {
+	font-size: 2em;
+    margin: 0 0 .5em;
+    color: #fff;
+}
+.servc-grid-right p{
+    margin: 0;
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.8em;
+}
+.servc-grid-left {
+    text-align: right;
+    padding-right: 2em;
+}
+/*-- //services --*/
+
+/*========Responsive ====================*/
+
+@media (max-width: 991px){
+.servc-grids {
+    margin-top: 2em;
+}
+  }
+@media (max-width: 480px){
+.servc-grid {
+    min-height: 160px;
+}
+.services {
+    padding: 2em 0;
+}
+
+@media (max-width: 384px){
+.servc-grid-left {
+    text-align: center;
+    padding: 0;
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.servc-grid-right {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+    }
+</style>
+
+
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'/>
+<!-- Material Design fonts -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css"/>
+<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
+<!-- Bootstrap -->
+<link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'/>
+<!-- Bootstrap Material Design -->
+<link href='//mymediaelements.github.io/md-style/css/bootstrap-material-design.css' rel='stylesheet'/>
+<link href='//mymediaelements.github.io/md-style/css/ripples.min.css' rel='stylesheet'/>
+
+</head>
+<body>
+    <!-- Header -->
+<div class='navbar navbar-custom'>
+  <div class='container'>
+    <div class='navbar-header'>
+      <button class='navbar-toggle' data-target='.navbar-inverse-collapse' data-toggle='collapse' type='button'>
+        <span class='icon-bar'/>
+        <span class='icon-bar'/>
+        <span class='icon-bar'/>
+      </button>
+      <div class='navbar-brand'>
+    <h1 class='title' style='background: transparent; border-width: 0px'>
+psc pakistan            
+</h1>
+</div>
+    </div>
+    <div class='navbar-collapse collapse navbar-inverse-collapse'>
+     
+     
+      <ul class='nav navbar-nav navbar-right'>
+        <li><a href='javascript:void(0)'>Home</a></li>
+         <li><a href='javascript:void(0)'>Orgnization</a></li>
+          <li><a href='javascript:void(0)'>Magzine</a></li>
+          <li><a href='javascript:void(0)'>Blog</a></li>
+          <li><a href='javascript:void(0)'>Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+<!-- #header -->
+
+ <div class="carousel slide" data-ride="carousel" id="carousel-example-generic" data-wrap="true"><!-- Indicators -->
+
+<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+<div class="item active" data-interval="5000"><img alt="Slide 1" src="https://images7.alphacoders.com/411/thumb-1920-411820.jpg" style="width: 100%;"/></div>
+
+<div class="item" data-interval="300"><img alt="Slide 2" src="https://www.planwallpaper.com/static/images/general-night-golden-gate-bridge-hd-wallpapers-golden-gate-bridge-wallpaper.jpg" style="width: 100%;"/></div>
+
+<div class="item" data-interval="5000"><img alt="Slide 3" src="https://cdn.pixabay.com/photo/2017/11/28/22/25/lapland-2984828_960_720.jpg" style="width: 100%;"/></div>
+
+
+</div>
+<!-- Controls --><a class="left carousel-control" data-slide="prev" href="#carousel-example-generic" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" data-slide="next" href="#carousel-example-generic" role="button"> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a></div>
+
+<div class="events">
+  <h1>Events</h1>
+<div class="container">
+<div class="row"> <div class="col-sm-6 col-md-4"> <div class="thumbnail"> <img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwODVlMzUzNTggdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjA4NWUzNTM1OCI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44MDQ2ODc1IiB5PSIxMDUuMSI+MjQyeDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"/> <div class="caption"> <h3>Thumbnail label</h3> <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> <p><a href="#" class="btn btn-danger btn-raised" role="button">Read More</a></p> </div> </div> </div> <div class="col-sm-6 col-md-4"> <div class="thumbnail"> <img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwODVlMzZkYzcgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjA4NWUzNmRjNyI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44MDQ2ODc1IiB5PSIxMDUuMSI+MjQyeDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"/> <div class="caption"> <h3>Thumbnail label</h3> <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> <p><a href="#" class="btn btn-danger btn-raised" role="button">Read More</a></p></div> </div> </div> <div class="col-sm-6 col-md-4"> <div class="thumbnail"> <img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwODVlMzVjNDIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjA4NWUzNWM0MiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44MDQ2ODc1IiB5PSIxMDUuMSI+MjQyeDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"/> <div class="caption"> <h3>Thumbnail label</h3> <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> <p><a href="#" class="btn btn-danger btn-raised" role="button">Read More</a></p> </div> </div> </div> </div>
+  </div>
+  </div>
+<div class="services" id="services">
+		<div class="container">
+			<div class="services-heading">
+				<h1>Our Mission</h1>
+			</div>
+			<div class="servc-grids">
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-user effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Gender Equility</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-road effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Students Motivation</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="servc-grids">
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-plane effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Eligendi cum soluta nobis</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-bed effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Nobis cum soluta est</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="servc-grids">
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-magnet effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Cum soluta nobis est</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Soluta nobis cum est</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<footer class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo">
+<div class="bottom">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-6 col-xs-12 text-lg-left text-center">
+<p class="copyright-text">
+              © pscpakistan.org, All Rights Reserved. Made with <i aria-hidden="true" class="fa fa-heart" style="color:red"></i> by <a href="http://facebook.com/mohdjunaidkhalid"> Junaid Khalid</a>
+</p>
+</div>
+<div class="col-lg-6 col-xs-12 text-lg-right text-center">
+<ul class="list-inline" itemprop="mainEntity" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+<li class="list-inline-item">
+<a href="index.html">Home</a>
+</li>
+<li class="list-inline-item">
+<a href="#about">About Us</a>
+</li>
+<li class="list-inline-item">
+<a href="#features">Our Mission</a>
+</li>
+<li class="list-inline-item">
+<a href="#portfolio">Privacy</a>
+</li>
+<li class="list-inline-item">
+<a href="#team">Terms and Conditions</a>
+</li>
+<li class="list-inline-item">
+<a href="#contact">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+    <!-- Resources -->
+<!-- Resources -->
+<script src='//code.jquery.com/jquery-1.10.2.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<!-- Resources -->
+<script src='//mymediaelements.github.io/md-style/js/ripples.min.js'></script>
+<script src='//mymediaelements.github.io/md-style/js/material.min.js'></script>
+<script src='//fezvrasta.github.io/snackbarjs/dist/snackbar.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js'></script>
+<script>
+  $(function () {
+    $.material.init();
+    $(".shor").noUiSlider({
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+
+    $(".svert").noUiSlider({
+      orientation: "vertical",
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+  });
+</script>
+<script>
+var currentSlide;
+var rand;
+$(document).ready(function() {
+  currentSlide = Math.floor((Math.random() * $('.item').length));
+  rand = currentSlide;
+  $('#carousel-example-generic').carousel(currentSlide);
+  $('#carousel-example-generic').fadeIn(1000);
+  setInterval(function(){ 
+    while(rand == currentSlide){
+      rand = Math.floor((Math.random() * $('.item').length));
+    }
+    currentSlide = rand;
+    $('#carousel-example-generic').carousel(rand);
+  },5000);
+}); 
+</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1378240528916986',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  </body>
+</html>
