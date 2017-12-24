@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title>Porgressive students collective, Pakistan</title>
+<style>
+body {baclground:#f2f2f2;color:#555; font-size: 1.6rem;line-height: 1.6!important;
+margin:0;padding:0px;font-weight:400}
+.navbar.navbar-custom {
+    background: #fff;
+    webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    color: #f52314;
+    margin: 0;
+}
+.navbar-brand{padding:10px 15px!important;}
+.navbar-brand h1{margin:0;padding:0;text-transform:uppercase;}
+.navbar .navbar-nav > li > a{font-size:16px;font-weight:600;text-transform:uppercase;}
+h1, h2, h3, h4, h5, h6{
+font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+font-weight: 700!important;
+color:#333;
+}
+/*=========================Carousel=======================*/
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 320px;
+}
+/*========Footer==========*/
+footer.site-footer {
+    background: #fff;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size:15px;
+}
+  footer.site-footer a{color:#666;font-weight:500;}
+/* ---Events --- */
+.events {
+    padding: 30px 0;
+    background: #fff;
+}
+.events h1 {
+    text-align: center;
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+/*-- services --*/
+.services {
+    background: #f52314;
+        padding:30px 0 50px;
+}
+.services-heading h1 {
+    text-align: center;
+    color:#fff;
+}
+.servc-grids {
+	margin-top: 5em;
+}
+/*-- Effect 1--*/
+.servc-grid-left span{
+    font-size: 2em;
+    color: #ffc107;
+    display: inline-block;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1;
+    padding: 1em;
+}
+.servc-grid-left span:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.effect-1 {
+    background: #ffffff;
+    -webkit-transition: background 0.5s, color 0.2s;
+    -moz-transition: background 0.5s, color 0.2s;
+    transition: background 0.5s, color 0.2s;
+}
+.effect-1:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 2px #ffc107;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.2s;
+    -webkit-transform: scale(0.8);
+    -moz-transition: -moz-transform 0.5s, opacity 0.2s;
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transition: transform 0.5s, opacity 0.2s;
+    transform: scale(0.8);
+    opacity: 0;
+}
+.servc-grid:hover span{
+    background: #ffc107;
+    color: #fff !important;
+}
+.servc-grid:hover span:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+/*--//Effect 1--*/
+.servc-grid-right h4 {
+    font-size: 22px;
+    font-weight: 500!important;
+    margin: 0 0 .5em;
+    color: #fff;
+}
+.servc-grid-right p{
+    margin: 0;
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.8em;
+}
+.servc-grid-left {
+    text-align: right;
+    padding-right: 2em;
+}
+/*-- //Contact --*/
+ #contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#8BC3A3;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+
+input {
+    position: relative;
+    z-index: 9999;
+}
+/*========Responsive ====================*/
+@media (max-width: 1199px){.navbar .navbar-brand {
+    height: 60px;
+    padding: 0px;
+}
+	}
+	
+@media (max-width: 991px){
+.servc-grids {
+    margin-top: 2em;
+}
+  }
+@media (max-width: 480px){
+.servc-grid {
+    min-height: 160px;  
+	padding:0;
+}
+.services {
+    padding: 2em 0;
+}
+	}
+@media (max-width: 384px){
+	.servc-grid {
+    min-height: 160px;  
+	padding:0;
+}
+.servc-grid-left {
+    text-align: center;
+    padding: 0;
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.servc-grid-right {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+    }
+</style>
+
+
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'/>
+<!-- Material Design fonts -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css"/>
+<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
+<!-- Bootstrap -->
+<link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'/>
+<!-- Bootstrap Material Design -->
+<link href='//mymediaelements.github.io/md-style/css/bootstrap-material-design.css' rel='stylesheet'/>
+<link href='//mymediaelements.github.io/md-style/css/ripples.min.css' rel='stylesheet'/>
+
+</head>
+<body>
+    <!-- Header -->
+<div class='navbar navbar-custom'>
+  <div class='container'>
+    <div class='navbar-header'>
+      <button class='navbar-toggle' data-target='.navbar-inverse-collapse' data-toggle='collapse' type='button'>
+        <span class='icon-bar'/>
+        <span class='icon-bar'/>
+        <span class='icon-bar'/>
+      </button>
+      <div class='navbar-brand'>
+    <h1 class='title' style='background: transparent; border-width: 0px'>
+psc pakistan            
+</h1>
+</div>
+    </div>
+    <div class='navbar-collapse collapse navbar-inverse-collapse'>
+     
+     
+      <ul class='nav navbar-nav navbar-right'>
+        <li><a href='javascript:void(0)'>Home</a></li>
+         <li><a href='javascript:void(0)'>Orgnization</a></li>
+          <li><a href='javascript:void(0)'>Magzine</a></li>
+          <li><a href='javascript:void(0)'>Blog</a></li>
+          <li><a href='javascript:void(0)'>Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+<!-- #header -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  Progressive Student Collective, Pakistan
+    </title>
+	<title>Cororeal Blogger Responsive Template</title>
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'/>
+<!-- Material Design fonts -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
+<!-- Bootstrap -->
+<link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'/>
+<!-- Bootstrap Material Design -->
+<link href='//mymediaelements.github.io/md-style/css/bootstrap-material-design.css' rel='stylesheet'/>
+<link href='//mymediaelements.github.io/md-style/css/ripples.min.css' rel='stylesheet'/>
+  </head>
+  <body>
+    
+<br />
+<div class="inner contact">
+                <!-- Form Area -->
+                <div class="contact-form">
+                    <!-- Form -->
+                    <form id="contact-us" method="post" action="#">
+                        <!-- Left Inputs -->
+                        <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- Name -->
+                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                            <!-- Email -->
+                            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                            <!-- Subject -->
+                            <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                        </div><!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+                        <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                        </div><!-- End Right Inputs -->
+                        <!-- Bottom Submit -->
+                        <div class="relative fullwidth col-xs-12">
+                            <!-- Send Button -->
+                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> 
+                        </div><!-- End Bottom Submit -->
+                        <!-- Clear -->
+                        <div class="clear"></div>
+                    </form>
+
+                    <!-- Your Mail Message -->
+                    <div class="mail-message-area">
+                        <!-- Message -->
+                        <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                        </div>
+                    </div>
+
+                </div><!-- End Contact Form Area -->
+            </div><!-- End Inner -->
+
+		<div class="container">
+			<div class="services-heading">
+				<h1>Our Mission</h1>
+			</div>
+			<div class="servc-grids">
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-user effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Gender Equility</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-road effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Students Motivation</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="servc-grids">
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-plane effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Eligendi cum soluta nobis</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-bed effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Nobis cum soluta est</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="servc-grids">
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-magnet effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Cum soluta nobis est</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Soluta nobis cum est</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus 
+						reiciendis maiores alias consequatur aut</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<footer class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo">
+<div class="bottom">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-6 col-xs-12 text-lg-left text-center">
+<p class="copyright-text">
+              © pscpakistan.org, All Rights Reserved. Made with <i aria-hidden="true" class="fa fa-heart" style="color:red"></i> by <a href="http://facebook.com/mohdjunaidkhalid"> Junaid Khalid</a>
+</p>
+</div>
+<div class="col-lg-6 col-xs-12 text-lg-right text-center">
+<ul class="list-inline" itemprop="mainEntity" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+<li class="list-inline-item">
+<a href="index.html">Home</a>
+</li>
+<li class="list-inline-item">
+<a href="#about">About Us</a>
+</li>
+<li class="list-inline-item">
+<a href="#features">Our Mission</a>
+</li>
+<li class="list-inline-item">
+<a href="#portfolio">Privacy</a>
+</li>
+<li class="list-inline-item">
+<a href="#team">Terms and Conditions</a>
+</li>
+<li class="list-inline-item">
+<a href="#contact">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+    <!-- Resources -->
+<!-- Resources -->
+<script src='//code.jquery.com/jquery-1.10.2.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<!-- Resources -->
+<script src='//mymediaelements.github.io/md-style/js/ripples.min.js'></script>
+<script src='//mymediaelements.github.io/md-style/js/material.min.js'></script>
+<script src='//fezvrasta.github.io/snackbarjs/dist/snackbar.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js'></script>
+<script>
+  $(function () {
+    $.material.init();
+    $(".shor").noUiSlider({
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+    $(".svert").noUiSlider({
+      orientation: "vertical",
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+  });
+</script>
+<script>
+var currentSlide;
+var rand;
+$(document).ready(function() {
+  currentSlide = Math.floor((Math.random() * $('.item').length));
+  rand = currentSlide;
+  $('#carousel-example-generic').carousel(currentSlide);
+  $('#carousel-example-generic').fadeIn(1000);
+  setInterval(function(){ 
+    while(rand == currentSlide){
+      rand = Math.floor((Math.random() * $('.item').length));
+    }
+    currentSlide = rand;
+    $('#carousel-example-generic').carousel(rand);
+  },5000);
+}); 
+</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1378240528916986',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  </body>
+</html>
